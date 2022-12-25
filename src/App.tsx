@@ -1,24 +1,101 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [bodyContent, setNewBodyContent] = useState("main");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="header">
+        <nav id="main-menu">
+          <ul>
+            <li>
+              <button
+                onClick={(e) => {
+                  setNewBodyContent("main");
+                }}
+              >
+                main()
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={(e) => {
+                  setNewBodyContent("about");
+                }}
+              >
+                about()
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={(e) => {
+                  setNewBodyContent("experience");
+                }}
+              >
+                experience()
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={(e) => {
+                  setNewBodyContent("projects");
+                }}
+              >
+                projects()
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <input type="checkbox" id="hamburger-input" className="burger-shower" />
+        <label id="hamburger-menu" htmlFor="hamburger-input">
+          <nav id="sidebar-menu">
+            <h3>Menu</h3>
+            <ul>
+              <li>
+                <button
+                  onClick={(e) => {
+                    setNewBodyContent("main");
+                  }}
+                >
+                  main()
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={(e) => {
+                    setNewBodyContent("about");
+                  }}
+                >
+                  about()
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={(e) => {
+                    setNewBodyContent("experience");
+                  }}
+                >
+                  experience()
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={(e) => {
+                    setNewBodyContent("projects");
+                  }}
+                >
+                  projects()
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </label>
+      </div>
+      <div id="body">
+        <p>{bodyContent}</p>
+      </div>
     </div>
   );
 }

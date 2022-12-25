@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+body {
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 200vh;
+  font-family: "Cabin", Sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#header button {
+  background: none;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: black;
+  margin: 0px;
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu button {
+  color: #66fcf1;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#hamburger-input {
+  display: none;
+}
+
+#hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cabin", Sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #66fcf1,
+    #66fcf1 20%,
+    black 20%,
+    black 40%,
+    #66fcf1 40%,
+    #66fcf1 60%,
+    black 60%,
+    black 80%,
+    #66fcf1 80%,
+    #66fcf1 100%
+  );
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  transition: 0.3s;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #66fcf1;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu button {
+  color: #66fcf1;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+#hamburger-input:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) {
+  #main-menu {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  #hamburger-menu {
+    display: inline;
   }
 }
