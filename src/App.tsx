@@ -5,7 +5,7 @@ function App() {
   const [bodyContent, setNewBodyContent] = useState("main");
 
   return (
-    <div>
+    <div id="app">
       <div id="header">
         <nav id="main-menu">
           <ul>
@@ -93,7 +93,7 @@ function App() {
           </nav>
         </label>
       </div>
-      <div id="body">
+      <div id="body" className="gradient-border">
         <p>{bodyContent}</p>
       </div>
     </div>
