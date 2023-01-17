@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
+import mainContent from "./bodyContent/main";
+import aboutContent from "./bodyContent/about";
+import experienceContent from "./bodyContent/experience";
+import projectsContent from "./bodyContent/projects";
 
 function App() {
-  const [bodyContent, setNewBodyContent] = useState("main");
-
+  const [bodyContent, setNewBodyContent] = useState(mainContent);
   return (
     <div id="app">
       <div id="header">
@@ -12,7 +15,7 @@ function App() {
             <li>
               <button
                 onClick={(e) => {
-                  setNewBodyContent("main");
+                  setNewBodyContent(mainContent);
                 }}
               >
                 main()
@@ -21,7 +24,7 @@ function App() {
             <li>
               <button
                 onClick={(e) => {
-                  setNewBodyContent("about");
+                  setNewBodyContent(aboutContent);
                 }}
               >
                 about()
@@ -30,7 +33,7 @@ function App() {
             <li>
               <button
                 onClick={(e) => {
-                  setNewBodyContent("experience");
+                  setNewBodyContent(experienceContent);
                 }}
               >
                 experience()
@@ -39,7 +42,7 @@ function App() {
             <li>
               <button
                 onClick={(e) => {
-                  setNewBodyContent("projects");
+                  setNewBodyContent(projectsContent);
                 }}
               >
                 projects()
@@ -56,7 +59,7 @@ function App() {
               <li>
                 <button
                   onClick={(e) => {
-                    setNewBodyContent("main");
+                    setNewBodyContent(mainContent);
                   }}
                 >
                   main()
@@ -65,7 +68,7 @@ function App() {
               <li>
                 <button
                   onClick={(e) => {
-                    setNewBodyContent("about");
+                    setNewBodyContent(aboutContent);
                   }}
                 >
                   about()
@@ -74,7 +77,7 @@ function App() {
               <li>
                 <button
                   onClick={(e) => {
-                    setNewBodyContent("experience");
+                    setNewBodyContent(experienceContent);
                   }}
                 >
                   experience()
@@ -83,7 +86,7 @@ function App() {
               <li>
                 <button
                   onClick={(e) => {
-                    setNewBodyContent("projects");
+                    setNewBodyContent(projectsContent);
                   }}
                 >
                   projects()
@@ -94,7 +97,7 @@ function App() {
         </label>
       </div>
       <div id="body" className="gradient-border">
-        <p>{bodyContent}</p>
+        <p dangerouslySetInnerHTML={{ __html: bodyContent }}></p>
       </div>
     </div>
   );
