@@ -1,6 +1,6 @@
 const experienceContent = `
     <p>Hello</p>
-    <p>World</p>
+    <p>Experience</p>
 `;
 
 export default experienceContent;

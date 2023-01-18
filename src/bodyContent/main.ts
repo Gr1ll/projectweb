@@ -1,6 +1,6 @@
 const mainContent = `
     <p>Hello</p>
-    <p>World</p>
+    <p>Main</p>
 `;
 
 export default mainContent;

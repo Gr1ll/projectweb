@@ -1,6 +1,6 @@
 const aboutContent = `
     <p>Hello</p>
-    <p>World</p>
+    <p>About</p>
 `;
 
 export default aboutContent;

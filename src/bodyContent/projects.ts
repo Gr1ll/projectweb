@@ -1,6 +1,6 @@
 const projectsContent = `
     <p>Hello</p>
-    <p>World</p>
+    <p>Projects</p>
 `;
 
 export default projectsContent;
