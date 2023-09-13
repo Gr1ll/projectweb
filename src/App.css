@@ -25,12 +25,14 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .social-icon {
   text-align: center;
   margin: 0 20px;
+  flex: 1;
 }
 
 .logo {
@@ -42,8 +44,8 @@
   text-decoration: none;
   color: white;
   display: block;
-  margin-top: 10px;
   font-size: 24px;
+  margin-top: 10px;
 }
 
 .social-icon a:hover {
