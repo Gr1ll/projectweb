@@ -1,106 +1,34 @@
-import React, { useState } from "react";
-import "./App.css";
-import mainContent from "./bodyContent/main";
-import aboutContent from "./bodyContent/about";
-import experienceContent from "./bodyContent/experience";
-import projectsContent from "./bodyContent/projects";
+import React from 'react';
+import './App.css';
+
+import githubLogo from './assets/github.png';
+import stackoverflowLogo from './assets/stackoverflow.png';
+import xLogo from './assets/x.png';
 
 function App() {
-  const [bodyContent, setNewBodyContent] = useState(mainContent);
-  return (
-    <div id="app">
-      <div id="header">
-        <nav id="main-menu">
-          <ul>
-            <li>
-              <button
-                onClick={(e) => {
-                  setNewBodyContent(mainContent);
-                }}
-              >
-                main()
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={(e) => {
-                  setNewBodyContent(aboutContent);
-                }}
-              >
-                about()
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={(e) => {
-                  setNewBodyContent(experienceContent);
-                }}
-              >
-                experience()
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={(e) => {
-                  setNewBodyContent(projectsContent);
-                }}
-              >
-                projects()
-              </button>
-            </li>
-          </ul>
-        </nav>
-
-        <input type="checkbox" id="hamburger-input" className="burger-shower" />
-        <label id="hamburger-menu" htmlFor="hamburger-input">
-          <nav id="sidebar-menu">
-            <h3>Menu</h3>
-            <ul>
-              <li>
-                <button
-                  onClick={(e) => {
-                    setNewBodyContent(mainContent);
-                  }}
-                >
-                  main()
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={(e) => {
-                    setNewBodyContent(aboutContent);
-                  }}
-                >
-                  about()
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={(e) => {
-                    setNewBodyContent(experienceContent);
-                  }}
-                >
-                  experience()
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={(e) => {
-                    setNewBodyContent(projectsContent);
-                  }}
-                >
-                  projects()
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </label>
-      </div>
-      <div id="body" className="gradient-border">
-        <p dangerouslySetInnerHTML={{ __html: bodyContent }}></p>
-      </div>
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1 className="title">Cyril</h1>
+            <h2 className="subtitle">Software Developer Apprentice</h2>
+            <div className="social-icons">
+                <div className="social-icon">
+                    <a href="https://github.com/Gr1ll" target="_blank" rel="noopener noreferrer">
+                        <img src={githubLogo} alt="GitHub" className="logo" />
+                    </a>
+                </div>
+                <div className="social-icon">
+                    <a href="https://stackoverflow.com/users/18949209/grill" target="_blank" rel="noopener noreferrer">
+                        <img src={stackoverflowLogo} alt="Stack Overflow" className="logo" />
+                    </a>
+                </div>
+                <div className="social-icon">
+                    <a href="https://x.com/DevGrillo" target="_blank" rel="noopener noreferrer">
+                        <img src={xLogo} alt="Twitter" className="logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
