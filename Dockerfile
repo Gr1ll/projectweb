@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+COPY build/ ./build/
 
-COPY . .
+RUN npm install
 
 ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "serve"]
