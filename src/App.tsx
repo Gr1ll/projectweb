@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 
 import githubLogo from "./assets/github.png";
