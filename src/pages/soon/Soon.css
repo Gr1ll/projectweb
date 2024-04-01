@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.countdown {
+  font-size: 24px;
+  color: #999;
+  margin-bottom: 40px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #666;
+}
+
+.footer {
+  font-size: 14px;
+  color: #999;
+}
