@@ -27,7 +27,7 @@ function Menu() {
       <nav className={`nav ${isMenuOpen ? "show" : ""}`}>
         <ul>
           <li onClick={navigateToSubPage("/")}>Home</li>
-          <li onClick={navigateToSubPage("/soon")}>Comming Soon</li>
+          <li onClick={navigateToSubPage("/about-me")}>About Me</li>
         </ul>
       </nav>
 

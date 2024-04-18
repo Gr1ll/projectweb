@@ -1,14 +1,14 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Soon from "./pages/soon/Soon";
+import AboutMe from "./pages/aboutMe/AboutMe";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/soon" Component={Soon} />
+        <Route path="/about-me" Component={AboutMe} />
       </Routes>
     </BrowserRouter>
   );
