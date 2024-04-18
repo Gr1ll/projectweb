@@ -164,3 +164,20 @@ span {
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .fakeMenu {
+    width: 95%;
+  }
+
+  .fakeScreen {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-height: 790px) {
+  .fakeScreen {
+    height: 400px;
+  }
+}
