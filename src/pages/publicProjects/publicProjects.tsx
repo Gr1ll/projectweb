@@ -56,7 +56,7 @@ function PublicProjects() {
                   {publicProjectData.map((project, index) => (
                       <Grid key={index}>
                           <Item className="card">
-                              <Card sx={{ width: 345 }} onClick={() => cardClicked(project.url)}>
+                              <Card sx={{ width: 345, height: 250 }} onClick={() => cardClicked(project.url)}>
                                   <CardActionArea>
                                       <CardMedia
                                           component="img"
