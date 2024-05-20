@@ -7,7 +7,9 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 
 function cardClicked(url: string){
-    window.open(url, "_blank")
+    if(url){
+        window.open(url, "_blank")
+    }
 }
 
 const Item = styled(Paper)(({ theme }) => ({
