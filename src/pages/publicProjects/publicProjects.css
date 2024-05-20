@@ -1,6 +1,9 @@
 .container{
   position: absolute;
   top: 15%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .card{
@@ -15,4 +18,9 @@ body{
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
 }
