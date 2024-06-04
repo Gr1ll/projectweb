@@ -80,6 +80,7 @@ span {
 
 .response-line {
   color: #bcb9b9;
+  /*white-space: pre-wrap;*/
 }
 
 .cursor-line {
