@@ -13,9 +13,9 @@ function AboutMe() {
 
   useEffect(() => {
     axios
-      .get("https://api.cyrilk.dev/about-me/")
+      .get(process.env.REACT_APP_API_URL + "about-me/")
       .then((response) => {
-        setAboutMeData(response.data[0]);
+        setAboutMeData(response.data);
         setLoading(false);
       })
       .catch((error) => {
