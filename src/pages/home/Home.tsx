@@ -4,6 +4,8 @@ import stackoverflowLogo from "../../assets/stackoverflow.png";
 import xLogo from "../../assets/x.png";
 import Menu from "../../menu/Menu";
 
+import { SocialIcon } from 'react-social-icons'
+
 function Home() {
   return (
     <div>
@@ -13,35 +15,13 @@ function Home() {
         <h2 className="subtitle">Software Engineer Apprentice</h2>
         <div className="social-icons">
           <div className="social-icon">
-            <a
-              href="https://github.com/Gr1ll"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={githubLogo} alt="GitHub" className="logo" />
-            </a>
+            <SocialIcon className="logo"  url="https://github.com/Gr1ll" network="github" bgColor="black"/>
           </div>
           <div className="social-icon">
-            <a
-              href="https://stackoverflow.com/users/18949209/grill"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={stackoverflowLogo}
-                alt="Stack Overflow"
-                className="logo"
-              />
-            </a>
+            <SocialIcon className="logo" url="https://stackoverflow.com/users/18949209/grill" network="stackoverflow" bgColor="black"/>
           </div>
           <div className="social-icon">
-            <a
-              href="https://x.com/DevGrillo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={xLogo} alt="Twitter" className="logo" />
-            </a>
+            <SocialIcon className="logo"  url="https://x.com/DevGrillo" network="x" />
           </div>
         </div>
       </div>
