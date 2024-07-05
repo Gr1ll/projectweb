@@ -32,7 +32,7 @@ function AboutMe() {
   return (
       <div>
         <Menu />
-        <div className="Home">
+        <div className="aboutMe">
           <div className="fakeMenu">
             <div className="fakeButtons fakeClose"></div>
             <div className="fakeButtons fakeMinimize"></div>

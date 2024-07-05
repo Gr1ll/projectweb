@@ -31,8 +31,6 @@ function Menu() {
           <li onClick={navigateToSubPage("/public-projects")}>Public Projects</li>
         </ul>
       </nav>
-
-      <div className={`black ${isMenuOpen ? "slide" : ""}`}></div>
     </div>
   );
 }

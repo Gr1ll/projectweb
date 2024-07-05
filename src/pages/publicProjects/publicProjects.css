@@ -14,6 +14,7 @@
 body{
   overflow: scroll;
   -ms-overflow-style: none;
+  background-color: #2b2d30;
 }
 
 body::-webkit-scrollbar {
@@ -23,4 +24,9 @@ body::-webkit-scrollbar {
 .grid{
   display: flex;
   justify-content: center;
+}
+
+.card-background{
+  border-radius: 25px !important;
+  background-color: #8a929b !important;
 }

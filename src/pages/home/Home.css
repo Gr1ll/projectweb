@@ -1,5 +1,5 @@
 .Home {
-  background-color: black;
+  background-color: #2b2d30;
   color: white;
   text-align: center;
   height: 100vh;
@@ -14,14 +14,14 @@
   font-size: 60px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 .subtitle {
   text-align: center;
   margin-top: 20px;
   font-size: 30px;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 .social-icons {
