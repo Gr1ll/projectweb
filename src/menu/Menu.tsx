@@ -28,7 +28,7 @@ function Menu() {
         <ul>
           <li onClick={navigateToSubPage("/")}>Home</li>
           <li onClick={navigateToSubPage("/about-me")}>About Me</li>
-          <li onClick={navigateToSubPage("/public-projects")}>Public Projects</li>
+          <li onClick={navigateToSubPage("/public-projects")}>Projects</li>
         </ul>
       </nav>
     </div>

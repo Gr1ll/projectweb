@@ -1,15 +1,24 @@
 import "./publicProjects.css";
 import Menu from "../../menu/Menu";
-import {Card, CardActionArea, CardContent, CardMedia, Grid, Paper, styled, Typography} from "@mui/material";
-import {project} from "../../types/project";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Grid,
+  Paper,
+  styled,
+  Typography,
+} from "@mui/material";
+import { project } from "../../types/project";
 import defaultImage from "../../assets/default-image.png";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-function cardClicked(url: string){
-    if(url){
-        window.open(url, "_blank")
-    }
+function cardClicked(url: string) {
+  if (url) {
+    window.open(url, "_blank");
+  }
 }
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -21,31 +30,30 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function PublicProjects() {
-    const [publicProjectData, setPublicProjectData] = useState<project[]>([
+  const [publicProjectData, setPublicProjectData] = useState<project[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    ]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  useEffect(() => {
+    axios
+      .get(process.env.REACT_APP_API_URL + "projects/")
+      .then((response) => {
+        setPublicProjectData(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, []);
 
-    useEffect(() => {
-        axios.get('https://api.cyrilk.dev/projects/')
-            .then(response => {
-                setPublicProjectData(response.data);
-                setLoading(false);
-            })
-            .catch(error => {
-                setError(error);
-                setLoading(false);
-            });
-    }, []);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
-
-    if (error) {
-        return <div>Error loading data</div>;
-    }
+  if (error) {
+    return <div>Error loading data</div>;
+  }
 
   return (
       <div >
