@@ -8,14 +8,16 @@
       name="description"
       content="Portfolio from Cyril Kurmann, software engineer apprentice in switzerland. Public Projects listed on this page. Also some informations about Cyril Kurmann."
     />
+    <meta property="og:title" content="Cyril Kurmann - Software Engineer Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Cyril Kurmann, a software engineer apprentice in Switzerland. Discover public projects and learn more about Cyril Kurmann." />
+    <meta property="og:url" content="https://cyrilk.dev" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N91B890EYH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-N91B890EYH');
     </script>
 
@@ -25,7 +27,25 @@
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MQNS3XL2');</script>
+
     <!-- End Google Tag Manager -->
+
+    <!-- google list -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Cyril Kurmann",
+        "jobTitle": "Software Engineer Apprentice",
+        "url": "https://cyrilk.dev/",
+        "sameAs": [
+          "https://www.linkedin.com/in/cyril-kurmann-b623a019a/",
+          "https://github.com/Gr1ll"
+        ],
+        "description": "Explore the portfolio of Cyril Kurmann, a software engineer apprentice in Switzerland. Discover public projects and learn more about Cyril Kurmann."
+      }
+    </script>
+    <!-- End Google list -->
 
     <link
             rel="stylesheet"
@@ -33,14 +53,16 @@
     />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Cyril Kurmann</title>
+    <title>Cyril Kurmann - Software Engineer Portfolio</title>
   </head>
   <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQNS3XL2"
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+  </noscript>
     <div id="root"></div>
   </body>
 </html>
