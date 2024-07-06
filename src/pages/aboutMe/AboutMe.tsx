@@ -24,14 +24,6 @@ function AboutMe() {
       });
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error loading data</div>;
-  }
-
   return (
     <div>
       <Menu />

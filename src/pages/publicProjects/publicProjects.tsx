@@ -47,13 +47,9 @@ function PublicProjects() {
       });
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error loading data</div>;
-  }
+    if (error) {
+        return <div className="errorNotification-container"><div className="errorNotification">Error loading data</div></div>;
+    }
 
   return (
       <div >

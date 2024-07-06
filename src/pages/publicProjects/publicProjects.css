@@ -44,3 +44,21 @@ body::-webkit-scrollbar {
 .cardImage{
   background-color: white !important;
 }
+
+
+.errorNotification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.errorNotification {
+  background-color: #ff3b47;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
