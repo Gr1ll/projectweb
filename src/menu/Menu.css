@@ -48,7 +48,7 @@
     cursor: pointer;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-    background-color: #2b2d30;
+    background-color: transparent;
     display: flex;
     align-items: center;
 }
@@ -75,7 +75,7 @@
 }
 
 nav {
-    background-color: #1e1e23;
+    background-color: #282b30;
     position: absolute;
     top: 0;
     right: 0;

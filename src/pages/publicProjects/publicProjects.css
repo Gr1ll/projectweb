@@ -9,12 +9,17 @@
 .card{
   display: flex;
   justify-content: center;
+  transition: transform 0.5s ease !important;
+}
+
+.card:hover{
+  transform: scale(1.03);
 }
 
 body{
   overflow: scroll;
   -ms-overflow-style: none;
-  background-color: #2b2d30;
+  background-color: #36393e;
 }
 
 body::-webkit-scrollbar {
@@ -26,7 +31,16 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-.card-background{
+.card-inside{
   border-radius: 25px !important;
-  background-color: #8a929b !important;
+  background-color: #40444b !important;
+  box-shadow: 0 0 5px #7e7e7e !important;
+}
+
+.cardContent{
+  color: white !important;
+}
+
+.cardImage{
+  background-color: white !important;
 }
