@@ -9,11 +9,17 @@
 .card{
   display: flex;
   justify-content: center;
+  transition: transform 0.5s ease !important;
+}
+
+.card:hover{
+  transform: scale(1.03);
 }
 
 body{
   overflow: scroll;
   -ms-overflow-style: none;
+  background-color: #36393e;
 }
 
 body::-webkit-scrollbar {
@@ -21,6 +27,38 @@ body::-webkit-scrollbar {
 }
 
 .grid{
+  display: flex;
+  justify-content: center;
+}
+
+.card-inside{
+  border-radius: 25px !important;
+  background-color: #40444b !important;
+  box-shadow: 0 0 5px #7e7e7e !important;
+}
+
+.cardContent{
+  color: white !important;
+}
+
+.cardImage{
+  background-color: white !important;
+}
+
+
+.errorNotification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.errorNotification {
+  background-color: #ff3b47;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
 }

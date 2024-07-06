@@ -1,5 +1,5 @@
-.Home {
-  background-color: black;
+.aboutMe {
+  background-color: #36393e;
   color: white;
   text-align: left;
   height: 100vh;
@@ -13,12 +13,11 @@
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid #9d252b;
   position: relative;
   top: 6px;
   left: 6px;
   background-color: #ff3b47;
-  border-color: #9d252b;
   display: inline-block;
 }
 
@@ -45,7 +44,7 @@
 }
 
 .fakeScreen {
-  background-color: #151515;
+  background-color: #19191c;
   box-sizing: border-box;
   width: 800px;
   height: 500px;

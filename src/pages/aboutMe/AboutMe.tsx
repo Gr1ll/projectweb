@@ -24,18 +24,10 @@ function AboutMe() {
       });
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error loading data</div>;
-  }
-
   return (
     <div>
       <Menu />
-      <div className="Home">
+      <div className="aboutMe">
         <div className="fakeMenu">
           <div className="fakeButtons fakeClose"></div>
           <div className="fakeButtons fakeMinimize"></div>
