@@ -48,7 +48,14 @@ function PublicProjects() {
   }, []);
 
     if (error) {
-        return <div className="errorNotification-container"><div className="errorNotification">Error loading data</div></div>;
+        return(
+        <div>
+            <Menu />
+            <div className="errorNotification-container">
+                <div className="errorNotification">Error loading data</div>
+            </div>
+        </div>
+        );
     }
 
   return (
