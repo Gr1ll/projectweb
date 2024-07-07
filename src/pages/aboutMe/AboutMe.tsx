@@ -26,7 +26,6 @@ function AboutMe() {
 
   return (
     <div>
-      <Menu />
       <div className="aboutMe">
         <div className="fakeMenu">
           <div className="fakeButtons fakeClose"></div>

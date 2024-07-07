@@ -1,0 +1,35 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: #0c1821;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0c1821;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1c2b36;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2e3e48;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1c2b36 #0c1821;
+}
+
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}

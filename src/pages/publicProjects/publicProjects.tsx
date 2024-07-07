@@ -50,7 +50,6 @@ function PublicProjects() {
     if (error) {
         return(
         <div>
-            <Menu />
             <div className="errorNotification-container">
                 <div className="errorNotification">Error loading data</div>
             </div>
@@ -60,7 +59,6 @@ function PublicProjects() {
 
   return (
       <div >
-        <Menu />
           <div className="container">
               <div className="items">
                   <Grid className="grid" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
