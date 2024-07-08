@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./AboutMe.css";
-import Menu from "../../menu/Menu";
 import axios from "axios";
 import { aboutMe } from "../../types/about-me";
 

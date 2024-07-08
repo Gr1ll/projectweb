@@ -1,5 +1,4 @@
 import "./publicProjects.css";
-import Menu from "../../menu/Menu";
 import {
   Card,
   CardActionArea,

@@ -9,10 +9,10 @@ import '@fontsource/roboto/700.css';
 
 function App() {
   return (
-      <div>
+      <div >
           <Home />
-          <AboutMe />
-          <PublicProjects />
+          <AboutMe/>
+          <PublicProjects/>
       </div>
   );
 }
