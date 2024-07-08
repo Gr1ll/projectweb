@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.items{
+  height: 100%;
+}
+
 .card{
   display: flex;
   justify-content: center;
