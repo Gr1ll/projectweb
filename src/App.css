@@ -17,7 +17,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #26364b;
+    background: #677588;
     border-radius: 6px;
 }
 
@@ -27,7 +27,7 @@ body {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #26364b #0c1821;
+    scrollbar-color: #677588 #0c1821;
 }
 
 body {
