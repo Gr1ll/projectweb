@@ -1,9 +1,37 @@
 .container{
-  position: absolute;
-  top: 15%;
+  background-color: #0c1821;
+  color: white;
+  text-align: left;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.items{
+  height: auto;
+}
+
+@media (min-width: 768px){
+  .container{
+    justify-content: center;
+    height: 100vh;
+  }
+  .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectsTitle{
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 768px){
+  .projectsTitle{
+    margin-top: 50%;
+    margin-bottom: 10%;
+  }
 }
 
 .card{
@@ -22,10 +50,6 @@ body{
   background-color: #0c1821;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .grid{
   display: flex;
   justify-content: center;
@@ -33,16 +57,26 @@ body::-webkit-scrollbar {
 
 .card-inside{
   border-radius: 25px !important;
-  background-color: #0c1821 !important;
   box-shadow: 0 0 5px #ccc9dc !important;
 }
 
 .cardContent{
+  position: absolute;
+  top: 130px;
+  width: 313px;
+  z-index: 1;
+  height: 90px;
+  background-color: #324a5f !important;
+  border-radius: 25px !important;
   color: white !important;
 }
 
 .cardImage{
   background-color: white !important;
+  position: relative;
+  z-index: 0;
+  height: 150px;
+  overflow: visible;
 }
 
 
@@ -61,4 +95,10 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   display: flex;
   justify-content: center;
+}
+
+.projectsTitle{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ccc9dc;
 }

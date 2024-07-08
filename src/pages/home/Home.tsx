@@ -1,12 +1,10 @@
 import "./Home.css";
-import Menu from "../../menu/Menu";
 
 import { SocialIcon } from 'react-social-icons'
 
 function Home() {
   return (
     <div>
-      <Menu />
       <div className="Home">
         <h1 className="title">Cyril</h1>
         <h2 className="subtitle">Software Engineer Apprentice</h2>

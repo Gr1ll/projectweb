@@ -1,0 +1,46 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: #0c1821;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0c1821;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #26364b;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2e3e48;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #26364b #0c1821;
+}
+
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
