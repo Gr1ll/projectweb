@@ -13,6 +13,7 @@ import { project } from "../../types/project";
 import defaultImage from "../../assets/default-image.png";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import FadeInSection from "../../components/FadeInSection";
 
 function cardClicked(url: string) {
   if (url) {

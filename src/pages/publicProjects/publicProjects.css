@@ -2,18 +2,21 @@
   background-color: #0c1821;
   color: white;
   text-align: left;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .items{
-  height: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px){
+  .container{
+    justify-content: center;
+    height: 100vh;
+  }
   .items{
     display: flex;
     justify-content: center;
