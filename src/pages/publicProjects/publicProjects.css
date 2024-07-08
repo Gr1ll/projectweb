@@ -21,6 +21,12 @@
   }
 }
 
+@media (max-width: 768px){
+  .items{
+      margin-top: 50%;
+  }
+}
+
 .card{
   display: flex;
   justify-content: center;
