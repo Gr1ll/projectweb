@@ -49,6 +49,25 @@
   margin-top: 10px;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 30px;
+  animation: scrollDown 1s infinite;
+}
+
+@keyframes scrollDown {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
 body {
   margin: 0;
   overflow: hidden;

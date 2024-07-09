@@ -11,11 +11,17 @@ import FadeIn from "./components/FadeIn";
 function App() {
   return (
     <div>
-      <Home />
-      <FadeIn>
-        <AboutMe />
-      </FadeIn>
-      <PublicProjects />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about">
+        <FadeIn>
+          <AboutMe />
+        </FadeIn>
+      </div>
+      <div id="projects">
+        <PublicProjects />
+      </div>
     </div>
   );
 }
