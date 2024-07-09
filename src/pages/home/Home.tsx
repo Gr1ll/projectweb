@@ -1,9 +1,12 @@
 import "./Home.css";
 import { FaArrowDownLong } from "react-icons/fa6";
-
 import { SocialIcon } from "react-social-icons";
 
 function Home() {
+  const scrollToAboutSection = () => {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <div className="Home">
@@ -38,7 +41,7 @@ function Home() {
             />
           </div>
         </div>
-        <a href="#about">
+        <a onClick={scrollToAboutSection}>
           <div className="scroll-down">
             <FaArrowDownLong />
           </div>
