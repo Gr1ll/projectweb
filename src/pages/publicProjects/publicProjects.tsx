@@ -13,6 +13,7 @@ import { project } from "../../types/project";
 import defaultImage from "../../assets/default-image.png";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import FadeIn from "../../components/FadeIn";
 
 function cardClicked(url: string) {
   if (url) {
@@ -69,31 +70,33 @@ function PublicProjects() {
           >
             {publicProjectData.map((project, index) => (
               <Grid key={index}>
-                <Item className="card">
-                  <Card
-                    sx={{ width: 345, height: 250 }}
-                    onClick={() => cardClicked(project.url)}
-                    className="card-inside"
-                  >
-                    <CardActionArea>
-                      <CardMedia
-                        component="img"
-                        height="140"
-                        image={project.image ?? defaultImage}
-                        alt="image"
-                        className="cardImage"
-                      />
-                      <CardContent className="cardContent">
-                        <Typography gutterBottom variant="h5" component="div">
-                          {project.title}
-                        </Typography>
-                        <Typography variant="body2">
-                          {project.description}
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
-                  </Card>
-                </Item>
+                <FadeIn>
+                  <Item className="card">
+                    <Card
+                      sx={{ width: 345, height: 250 }}
+                      onClick={() => cardClicked(project.url)}
+                      className="card-inside"
+                    >
+                      <CardActionArea>
+                        <CardMedia
+                          component="img"
+                          height="140"
+                          image={project.image ?? defaultImage}
+                          alt="image"
+                          className="cardImage"
+                        />
+                        <CardContent className="cardContent">
+                          <Typography gutterBottom variant="h5" component="div">
+                            {project.title}
+                          </Typography>
+                          <Typography variant="body2">
+                            {project.description}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </Item>
+                </FadeIn>
               </Grid>
             ))}
           </Grid>
