@@ -14,23 +14,11 @@
 
 @media (min-width: 768px){
   .container{
-    justify-content: center;
     height: 100vh;
   }
   .items{
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-  .projectsTitle{
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 768px){
-  .projectsTitle{
-    margin-top: 50%;
-    margin-bottom: 10%;
   }
 }
 
