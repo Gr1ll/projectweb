@@ -11,7 +11,7 @@ function Home() {
     <div>
       <div className="Home">
         <h1 className="title">Cyril</h1>
-        <h2 className="subtitle">Software Engineer Apprentice</h2>
+        <h2 className="subtitle">Jr. Software Engineer</h2>
         <div className="social-icons">
           <div className="social-icon">
             <SocialIcon
