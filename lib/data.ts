@@ -1,17 +1,12 @@
 import type { IconType } from "react-icons";
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaStackOverflow,
-  FaXTwitter,
-} from "react-icons/fa6";
-import { FiCalendar, FiHeart, FiMail, FiMapPin } from "react-icons/fi";
+import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa6";
+import { FiCalendar, FiHeart, FiMapPin } from "react-icons/fi";
 
 export const profile = {
   name: "Cyril Kurmann",
   role: "Jr. Software Engineer",
   tagline:
-    "I build fast, reliable and user-friendly software. Passionate about open source and solving real world problems.",
+    "I love finding solutions to problems and building things that make a difference.",
 };
 
 export type SocialLink = {
@@ -23,9 +18,7 @@ export type SocialLink = {
 export const socialLinks: SocialLink[] = [
   { label: "GitHub", href: "#", icon: FaGithub },
   { label: "Stack Overflow", href: "#", icon: FaStackOverflow },
-  { label: "X", href: "#", icon: FaXTwitter },
   { label: "LinkedIn", href: "#", icon: FaLinkedinIn },
-  { label: "Email", href: "mailto:cyril.kurmann@gmail.com", icon: FiMail },
 ];
 
 export type InfoItem = {

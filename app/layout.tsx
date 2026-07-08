@@ -12,8 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const description =
-  "Jr. Software Engineer from Switzerland building fast, reliable and privacy-focused software.";
+const description = "Jr. Software Engineer from Switzerland";
 
 export const metadata: Metadata = {
   title: "Cyril Kurmann — Jr. Software Engineer",
