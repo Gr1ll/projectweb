@@ -10,6 +10,7 @@ export type ApiProject = {
   description: string;
   image: string;
   url: string;
+  tags?: string[];
 };
 
 async function fetchJson<T>(path: string, fallback: T): Promise<T> {

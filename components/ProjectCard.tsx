@@ -3,7 +3,7 @@ import { FiArrowUpRight, FiExternalLink } from "react-icons/fi";
 import type { ApiProject } from "@/lib/api";
 
 export default function ProjectCard({ project }: { project: ApiProject }) {
-  const { title, description, image, url } = project;
+  const { title, description, image, url, tags } = project;
 
   return (
     <div className="flex flex-col overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/30 transition-colors hover:border-zinc-700">
@@ -34,6 +34,18 @@ export default function ProjectCard({ project }: { project: ApiProject }) {
           <p className="mt-2 text-sm leading-relaxed text-zinc-400">
             {description}
           </p>
+          {tags && tags.length > 0 && (
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <li
+                  key={tag}
+                  className="rounded-md border border-zinc-800 bg-zinc-800/40 px-2.5 py-1 text-xs text-zinc-300"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
 
