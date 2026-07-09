@@ -4,7 +4,11 @@ WORKDIR /app
 
 COPY package*.json ./
 
-COPY build/ ./build/
+COPY .next/ ./.next/
+
+COPY public/ ./public/
+
+COPY next.config.ts ./
 
 RUN npm install
 
@@ -12,4 +16,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "start"]
