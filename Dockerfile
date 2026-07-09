@@ -6,6 +6,10 @@ COPY package*.json ./
 
 COPY .next/ ./.next/
 
+COPY public/ ./public/
+
+COPY next.config.ts ./
+
 RUN npm install
 
 ENV PORT=8080
