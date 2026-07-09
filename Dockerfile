@@ -2,8 +2,6 @@ FROM node:20
 
 WORKDIR /app
 
-RUN npm build
-
 COPY package*.json ./
 
 COPY .next/ ./.next/
