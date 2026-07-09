@@ -15,10 +15,11 @@ const geistMono = Geist_Mono({
 const description = "Jr. Software Engineer from Switzerland";
 
 export const metadata: Metadata = {
-  title: "Cyril Kurmann — Jr. Software Engineer",
+  title: "Cyril Kurmann - Software Engineer Portfolio",
   description,
+  icons: { icon: "/images/logo.ico" },
   openGraph: {
-    title: "Cyril Kurmann — Jr. Software Engineer",
+    title: "Cyril Kurmann - Software Engineer Portfolio",
     description,
     type: "website",
   },

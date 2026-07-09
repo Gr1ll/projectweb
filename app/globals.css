@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  /* Base brand color — the page background. */
+  --background: #0c1821;
+  --foreground: #e9eef2;
 }
 
 @theme inline {
@@ -10,6 +11,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+/*
+ * Neutral ramp, retinted toward the brand background hue (#0c1821 ≈ 206°)
+ * so every zinc-* surface, border and text tone harmonizes with the page.
+ * Overrides Tailwind's default (gray) zinc scale.
+ */
+@theme {
+  --color-zinc-50: #eef3f6;
+  --color-zinc-100: #dde6ec;
+  --color-zinc-200: #c1cfd9;
+  --color-zinc-300: #a3b4c1;
+  --color-zinc-400: #7c91a2;
+  --color-zinc-500: #6b8296;
+  --color-zinc-600: #465e6f;
+  --color-zinc-700: #2f4657;
+  --color-zinc-800: #1e3140;
+  --color-zinc-900: #14232f;
+  --color-zinc-950: #0a141d;
 }
 
 html {

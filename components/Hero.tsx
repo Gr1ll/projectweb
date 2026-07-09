@@ -1,22 +1,11 @@
 import { FiArrowDown } from "react-icons/fi";
 import { profile } from "@/lib/data";
 import SocialLinks from "@/components/SocialLinks";
-import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 lg:block">
-        <Image
-          src="/images/hero.jpg"
-          alt=""
-          fill
-          priority
-          className="object-cover object-left"
-        />
-      </div>
-
-      <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-24">
+    <section>
+      <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-24">
         <div className="max-w-xl">
           <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
             {profile.name}

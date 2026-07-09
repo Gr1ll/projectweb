@@ -1,6 +1,7 @@
 import SectionLabel from "@/components/SectionLabel";
 import { getAboutMe } from "@/lib/api";
 import { aboutInfo } from "@/lib/data";
+import Image from "next/image";
 
 function renderBio(text: string) {
   const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -64,9 +65,16 @@ export default async function About() {
           </div>
 
           <div className="space-y-6">
-            {/* TODO: swap for a real photo:
-                <Image src="/images/about.jpg" alt="Cyril in the mountains" width={640} height={400} className="h-full w-full object-cover" /> */}
-            <div className="aspect-16/10 overflow-hidden rounded-xl border border-zinc-800 bg-linear-to-br from-zinc-700/40 to-zinc-900" />
+            <div className="aspect-16/10 overflow-hidden rounded-xl border border-zinc-800 bg-linear-to-br from-zinc-700/40 to-zinc-900">
+              <Image
+                src="/images/about.jpg"
+                alt="mountain view"
+                width={640}
+                height={400}
+                className="h-full w-full object-cover"
+                loading="eager"
+              />
+            </div>
 
             <ul className="divide-y divide-zinc-800 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/30">
               {aboutInfo.map(({ icon: Icon, label, value }) => (
