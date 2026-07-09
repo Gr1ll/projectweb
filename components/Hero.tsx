@@ -1,8 +1,14 @@
+"use client";
+
 import { FiArrowDown } from "react-icons/fi";
 import { profile } from "@/lib/data";
 import SocialLinks from "@/components/SocialLinks";
 
 export default function Hero() {
+  const scrollToAboutSection = () => {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section>
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-24">
@@ -21,13 +27,14 @@ export default function Hero() {
             <SocialLinks />
           </div>
 
-          <a
-            href="#about"
+          <button
+            type="button"
+            onClick={scrollToAboutSection}
             className="mt-16 inline-flex items-center gap-3 text-sm text-zinc-400 transition-colors hover:text-white"
           >
             <FiArrowDown className="scroll-hint h-5 w-5" />
             Scroll down
-          </a>
+          </button>
         </div>
       </div>
     </section>
