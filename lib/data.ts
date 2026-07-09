@@ -16,9 +16,17 @@ export type SocialLink = {
 };
 
 export const socialLinks: SocialLink[] = [
-  { label: "GitHub", href: "#", icon: FaGithub },
-  { label: "Stack Overflow", href: "#", icon: FaStackOverflow },
-  { label: "LinkedIn", href: "#", icon: FaLinkedinIn },
+  { label: "GitHub", href: "https://github.com/Gr1ll", icon: FaGithub },
+  {
+    label: "Stack Overflow",
+    href: "https://stackoverflow.com/users/18949209/grill",
+    icon: FaStackOverflow,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/cyril-kurmann-b623a019a/",
+    icon: FaLinkedinIn,
+  },
 ];
 
 export type InfoItem = {
