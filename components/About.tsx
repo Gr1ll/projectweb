@@ -65,7 +65,7 @@ export default async function About() {
           </div>
 
           <div className="space-y-6">
-            <div className="aspect-16/10 overflow-hidden rounded-xl border border-zinc-800 bg-linear-to-br from-zinc-700/40 to-zinc-900">
+            <div className="aspect-16/10 overflow-hidden rounded-xl border border-zinc-800 bg-linear-to-br from-zinc-700/40 to-zinc-900 max-lg:mt-10">
               <Image
                 src="/images/about.jpg"
                 alt="mountain view"

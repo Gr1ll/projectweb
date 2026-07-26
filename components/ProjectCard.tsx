@@ -8,13 +8,13 @@ export default function ProjectCard({ project }: { project: ApiProject }) {
   return (
     <div className="flex flex-col overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/30 transition-colors hover:border-zinc-700">
       <div className="flex gap-4 p-4">
-        <div className="relative min-h-130px w-2/5 shrink-0 self-stretch overflow-hidden rounded-lg border border-zinc-800 bg-linear-to-br from-zinc-700/40 to-zinc-900">
+        <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-lg border border-zinc-800 bg-linear-to-br from-zinc-700/40 to-zinc-900">
           <Image
             src={image}
             alt={`${title} screenshot`}
             fill
-            sizes="(min-width: 1024px) 20vw, 40vw"
-            className="object-cover"
+            sizes="128px"
+            className="object-contain bg-white"
           />
         </div>
 
