@@ -1,19 +1,16 @@
-FROM node:20
-
+FROM node:20 AS builder
 WORKDIR /app
-
 COPY package*.json ./
-
-COPY .next/ ./.next/
-
-COPY public/ ./public/
-
-COPY next.config.ts ./
-
 RUN npm install
+COPY . .
+RUN npm run build
 
+FROM node:20
+WORKDIR /app
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+RUN npm install --omit=dev
 ENV PORT=8080
-
 EXPOSE 8080
-
 CMD ["npm", "run", "start"]
